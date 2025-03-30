@@ -1,0 +1,31 @@
+/* reset the entire body of the html  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* set the header with id home*/
+#home {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+/* set the header h1 */
+#home h1 {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* styling the class with container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
