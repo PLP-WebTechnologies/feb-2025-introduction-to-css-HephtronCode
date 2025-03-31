@@ -5,12 +5,23 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(228, 222, 222);
+}
+
+a:hover {
+    color: #62d018;
+}
+
 /* set the header with id home*/
 #home {
     background: #35424a;
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
+    width: auto;
 }
 /* set the header h1 */
 #home h1 {
@@ -28,4 +39,198 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+/* styling for the id navbar */
+#navbar {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+/* styling the class with nav */
+.nav-links li {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    list-style: none;
+}
+
+/* styling the class with nav */
+#recipes {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+}
+
+.recipe-card {
+    display: inline-block;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#about {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+}
+
+#about h2, #about p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#contact {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+}
+
+#contact h2, #contact p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#contact label {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    display: block;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #35424a;
+}
+#contact button {
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    /* border: none;
+    border-radius: 5px; */
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#contact button:hover {
+    background-color: #62d018;
+    color: #ffffff;
+}
+
+/* Footer styling */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Footer links */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+}
+footer a:hover {
+    color: #62d018;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .recipe-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #navbar .nav-links li {
+        display: block;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 30px;
+    }
+    #navbar .nav-links li {
+        font-size: 16px;
+    }
+    #about h2, #contact h2 {
+        font-size: 24px;
+    }
+    #about p, #contact p {
+        font-size: 14px;
+    }
+}
+/* Add a media query for smaller screens */
+@media (max-width: 600px) {
+    #navbar .nav-links li {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    #about h2, #contact h2 {
+        font-size: 24px;
+    }
+    #about p, #contact p {
+        font-size: 14px;
+    }
+}
+/* Add a media query for larger screens */
+@media (min-width: 1200px) {
+    .recipe-card {
+        width: 25%;
+    }
 }
